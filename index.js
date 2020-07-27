@@ -20,4 +20,17 @@ class Dog {
   speak() {
     return `${this.name} says woof!`;
   }
-}
+};
+
+class Bird {
+  constructor(name, gender) {
+    this.name = name;
+    this.gender = gender
+  }
+
+  speak() {
+    if (this.gender === 'male') {
+      return `It\'s me! ${this.name}, the parrot!`
+    }
+  }
+};
